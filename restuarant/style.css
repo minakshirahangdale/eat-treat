@@ -1,0 +1,247 @@
+/* CSS Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+nav {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background: white;
+    padding: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bar_icon {
+    font-size: 30px;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_containt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tag {
+    background-color: tomato;
+    padding: 5px 10px;
+    color: white;
+    align-self: flex-start;
+}
+
+.hero_containt h1 {
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.explore_btn {
+    background: #ffc066;
+    align-self: flex-start;
+}
+
+/* features section */
+.features {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.features :hover1 {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    transition: 0.2s ease-in-out;
+}
+
+.divider {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Menu section */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.menu .tag {
+    align-self: center;
+}
+
+.grid {
+    display: grid;
+    gap: 10px; /* Adjust the gap as needed */
+    grid-template-areas:
+        "I1 I1 I2 I3"
+        "I4 I5 I6 I7";
+    justify-content: center;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7 {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.item1 {
+    grid-area: I1;
+}
+
+.item2 {
+    grid-area: I2;
+}
+
+.item3 {
+    grid-area: I3;
+}
+
+.item4 {
+    grid-area: I4;
+}
+
+.item5 {
+    grid-area: I5;
+}
+
+.item6 {
+    grid-area: I6;
+}
+
+.item7 {
+    grid-area: I7;
+}
+
+@media (max-width: 786px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_img img {
+        width: 90%;
+    }
+
+    .hero_containt {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .hero_containt h1 {
+        font-size: 30px;
+    }
+
+    .grid {
+        grid-template-areas:
+            "I1 I1 I1 I1"
+            "I2 I2 I2 I2"
+            "I3 I3 I3 I3"
+            "I4 I5 I6 I7";
+    }
+
+}
+/* Footer section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact,
+.social-media,
+.subscribe {
+    flex: 1;
+}
+
+.contact h3,
+.social-media h3,
+.subscribe h3 {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.subscribe input[type="email"],
+.subscribe button {
+    padding: 10px;
+    border: none;
+}
+
+.subscribe input[type="email"] {
+    width: 70%;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    background-color: #ffc066;
+    color: #333;
+    cursor: pointer;
+}
